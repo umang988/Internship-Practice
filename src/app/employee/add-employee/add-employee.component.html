@@ -1,0 +1,45 @@
+<body>
+  <h3 *ngIf= "isAdded" style="color: red;">{{ confirmationString }}</h3>
+    <form #addForm="ngForm" (ngSubmit)="addEmployee(addForm.value)">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" class="form-control" name="firstName" required pattern="[A-Za-z ]{1,32}" ngModel>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" class="form-control" name="lastName" required pattern="[A-Za-z ]{1,32}" ngModel>
+        </div>
+        <div class="form-group">
+            <label>Job Title Name</label>
+            <input type="text" class="form-control" name="jobTitleName" required pattern="[A-Za-z ]{1,32}" ngModel>
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" class="form-control" name="phoneNumber" pattern="[0-9]{10}" required ngModel>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" name="emailAddress" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" ngModel #rename="ngModel">
+          <div style="color: red;" *ngIf="!rename.valid && rename.touched">
+            Write the correct email address
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Salary</label>
+          <input type="text" class="form-control" name="salary" pattern="[0-9]{6}" required ngModel>
+        </div>
+        
+        <div ngModelGroup="details" #details="ngModelGroup">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" class="form-control" name="city" required pattern="[A-Za-z ]{1,32}" ngModel>
+          </div>
+          <div class="form-group">
+            <label>Pincode</label>
+            <input type="text" class="form-control" name="pincode" required pattern="[0-9]{6}" ngModel>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>

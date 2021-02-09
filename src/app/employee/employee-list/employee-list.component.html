@@ -1,0 +1,22 @@
+<table border="2">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Job Title</th>
+        <th>Phone Number</th>
+        <th>Email Id</th>
+        <th>Salary</th>
+        <th>Address</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor = "let emp of employeeData">
+        <td> {{ emp.id }}</td>
+        <td> {{ emp.firstName }} {{ emp.lastName }} </td>
+        <td> {{ emp.jobTitleName }} </td>
+        <td> {{ emp.phoneNumber }} </td>
+        <td> {{ emp.emailAddress }} </td>
+        <td> {{ emp.salary }} </td>
+        <td> {{ emp.details.city }},{{ emp.details.pincode }} </td>
+        <td> <button>Edit</button> <button (click)="deleteEmployee(emp.id)">Delete</button></td>
+    </tr>
+</table>

@@ -1,0 +1,9 @@
+body{
+    margin: 20px;
+}
+
+.emp-list{
+    display: flex;
+    align-content: flex-start;
+    
+}

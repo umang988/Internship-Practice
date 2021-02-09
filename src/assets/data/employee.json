@@ -1,0 +1,43 @@
+{
+  "Employees": [
+    {
+      "id": 1,
+      "jobTitleName": "Developer",
+      "firstName": "Romin",
+      "lastName": "Irani",
+      "phoneNumber": "408-1234567",
+      "emailAddress": "romin.k.irani@gmail.com",
+      "salary": 15000,
+      "details": {
+        "city": "Vadodara",
+        "pincode": 365201
+      }
+    },
+    {
+      "id": 2,
+      "jobTitleName": "Developer",
+      "firstName": "Neil",
+      "lastName": "Irani",
+      "phoneNumber": "408-1111111",
+      "emailAddress": "neilrirani@gmail.com",
+      "salary": 20000,
+      "details": {
+        "city": "Valsad",
+        "pincode": 325145
+      }
+    },
+    {
+      "id": 3,
+      "jobTitleName": "Program Directory",
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "phoneNumber": "408-2222222",
+      "emailAddress": "tomhanks@gmail.com",
+      "salary": 30000,
+      "details": {
+        "city": "Surat",
+        "pincode": 326824
+      }
+    }
+  ]
+}
