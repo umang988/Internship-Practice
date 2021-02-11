@@ -4,6 +4,7 @@ body{
 
 .emp-list{
     display: flex;
-    align-content: flex-start;
+    justify-content:start;
+    margin-right: 10px;
     
 }
