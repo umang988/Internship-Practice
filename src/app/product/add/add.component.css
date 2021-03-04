@@ -1,0 +1,17 @@
+body{
+    margin: 30px;
+}
+
+#delete-btn{
+    margin-top: 30px;
+}
+
+#add-btn{
+    display: inline;
+    margin-left: 735px;
+    margin-top: 20px;
+}
+
+input.ng-invalid.ng-touched{
+    border: 3px solid red;
+}

@@ -1,0 +1,34 @@
+{
+    "student" : [
+        {
+            "id":1,
+            "name" : "Umang Tandel",
+            "age" : 21,
+            "gender" : "Male",
+            "address" : {
+                "city" : "valsad",
+                "pincode" : 396001
+            }
+        },
+        {
+            "id":2,
+            "name" : "Pratik Tandel",
+            "age" : 23,
+            "gender" : "Male",
+            "address" : {
+                "city" : "Navsari",
+                "pincode" : 396003
+            }
+        },
+        {
+            "id":1,
+            "name" : "Nidhi Patel",
+            "age" : 21,
+            "gender" : "Female",
+            "address" : {
+                "city" : "valsad",
+                "pincode" : 396001
+            }
+        }
+    ]
+}

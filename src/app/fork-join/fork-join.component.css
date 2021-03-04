@@ -1,0 +1,10 @@
+body{
+    margin: 20px;
+}
+
+#elContainer{
+    font-size: large;
+    padding: 5px;
+    border: black;
+    border-radius: 2px;
+}

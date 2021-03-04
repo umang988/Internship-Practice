@@ -1,0 +1,27 @@
+{
+    "products" : [
+        {
+          "id":1 ,
+          "name":"chair",
+          "quantity":20,
+          "price":1500,
+          "deliveryAddress":{
+            "city":"Surat",
+            "state":"Gujarat",
+            "pincode":325145 
+          }
+        },     
+        {
+          "id":2 ,
+          "name":"table",
+          "quantity":10,
+          "price":2500,
+          "deliveryAddress":{
+            "city":"Valsad",
+            "state":"Gujarat",
+            "pincode":325445 
+          }
+        }
+    
+      ]
+}

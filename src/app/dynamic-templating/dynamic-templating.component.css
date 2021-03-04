@@ -1,0 +1,32 @@
+header{
+    margin: 5px;
+    padding: 10px;
+    background-color: red;
+    color: blue;
+}
+
+header h3{
+    color: chartreuse;
+}
+
+body{
+    margin: 5px;
+    padding: 10px;
+    background-color: darkblue;
+    color: deeppink;
+}
+
+body span{
+    color: deepskyblue;
+}
+
+footer{
+    margin: 5px;
+    padding: 10px;
+    background-color: black;
+    color: yellow;
+}
+
+footer span{
+    color: cyan;
+}

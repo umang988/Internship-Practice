@@ -1,0 +1,11 @@
+<body>
+    <h3>Child 1</h3>
+    <div class="child">
+        <label>Name : </label>
+        {{ username }}
+        <br>
+        <input type="text" #uname>
+
+        <button (click)=updateName(uname)>Update</button>
+    </div>
+</body>

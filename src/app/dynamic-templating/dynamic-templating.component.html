@@ -1,0 +1,18 @@
+<ng-template #temp let-name="name" let-lname="lname" let-defualt>
+    <h3>Hello this is Dynamic Template by {{ defualt }}{{ name }}{{ lname }}</h3>
+</ng-template>
+
+<hr>
+<header>
+    <ng-container *ngTemplateOutlet="temp, context : { name : 'Umang' }"></ng-container><span>in Header Section</span>
+</header>
+<hr>
+<hr>
+<body>
+    <ng-container *ngTemplateOutlet="temp, context : { $implicit : 'Iam', name : 'Pratik', lname : 'Tandel' }"></ng-container><span>in body Section</span>
+</body>
+<hr>
+<hr>
+<footer>
+    <ng-container *ngTemplateOutlet="temp, context : ali"></ng-container><span>in footer Section</span>
+</footer>

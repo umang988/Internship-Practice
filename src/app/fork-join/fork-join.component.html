@@ -1,0 +1,32 @@
+<body>
+    <H1> Fork Join</H1>
+
+    <label> Name </label>
+    <select class="form-control col-md-2"  #name>
+        <option *ngFor = " let item of nameSource" value="{{item}}"> {{ item }}</option>
+    </select>
+    <br>
+    <label> Color </label>
+    <select class="form-control col-md-2"  #color>
+        <option *ngFor = " let item of colorSource" value="{{item}}"> {{ item }}</option>
+    </select>
+    <hr>
+    <h3>ZIP</h3>
+    <hr>
+    <div class="boxes" id="elContainer">
+
+    </div>
+    <hr>
+    <h3>Fork Join</h3>
+    <hr>
+    <div class="boxes" id="elContainer2">
+
+    </div>
+
+    <hr>
+    <h3>Combine Latest</h3>
+    <hr>
+    <div class="boxes" id="elContainer3">
+
+    </div>
+</body>

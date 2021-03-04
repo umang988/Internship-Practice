@@ -1,0 +1,19 @@
+
+<table border="2">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Delivery Address</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor = "let p of students">
+        <td> {{ p.id }}</td>
+        <td> {{ p.name }} </td>
+        <td> {{ p.age }} </td>
+        <td> {{ p.gender }} </td>
+        <td> {{ p.address.city }},{{ p.address.pincode }} </td>
+        <td> <button>Edit</button> <button>Delete</button></td>
+    </tr>
+</table>
