@@ -1,0 +1,14 @@
+<body>
+    <button (click) = "loadNaruto()"> Click for Naruto </button>
+</body>
+
+<ng-container #narutoContainer> </ng-container>
+
+<h3>Data in main component</h3>
+<div class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">{{user.name}}</h5>
+      <p class="card-text">{{ user.age }}</p>
+      <button class="btn btn-primary" #hinataRef (click)="callHinata(user.name,hinataRef)">Button</button>
+    </div>
+  </div>

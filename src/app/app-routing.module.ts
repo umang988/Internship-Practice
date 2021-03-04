@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'student', loadChildren: () => import('./students/students.module').then(m => m.StudentsModule) },
   { path: 'subject', loadChildren: () => import('./subject/subject.module').then(m => m.SubjectModule) },
   { path: 'forkJoin', loadChildren: () => import('./fork-join/fork-join.module').then(m => m.ForkJoinModule) },
-  { path: 'dynamic', loadChildren: () => import('./dynamic-templating/dynamic-templating.module').then(m => m.DynamicTemplatingModule) }  
+  { path: 'dynamic', loadChildren: () => import('./dynamic-templating/dynamic-templating.module').then(m => m.DynamicTemplatingModule) },
+  { path: 'dyno', loadChildren: () => import('./dynamic-component/dynamic-component.module').then(m => m.DynamicComponentModule) }  
 ];
 
 @NgModule({
