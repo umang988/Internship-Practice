@@ -1,0 +1,22 @@
+p{
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+p:hover {
+    box-shadow: 2px 2px 10px 0 #6d6d6d;
+}
+
+p span {
+    padding: 10px 15px;
+    width: 150px;
+    transition: .3s all;
+    display: block;
+}
+
+p span:hover {
+    background-color: #c4c4c4;
+    transform: scale(1.05);
+}

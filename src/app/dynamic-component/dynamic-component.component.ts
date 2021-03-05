@@ -2,6 +2,7 @@ import { Component, OnInit, ComponentFactoryResolver, ViewContainerRef, Componen
 import { NarutoComponent } from './naruto/naruto.component';
 import { User } from './user';
 import { DynamicService } from './dynamic-service/dynamic.service';
+import { HinataComponent } from './hinata/hinata.component';
 
 @Component({
   selector: 'app-dynamic-component',
@@ -11,7 +12,7 @@ import { DynamicService } from './dynamic-service/dynamic.service';
 export class DynamicComponentComponent implements OnInit {
 
   public user : User = {
-    name : "umang",
+    name : "Shivam",
     age : 21,
   }
 
@@ -35,9 +36,9 @@ export class DynamicComponentComponent implements OnInit {
     // this.dynoRef.instance.destroy.subscribe(() => this.dynoRef.destroy());
   }
 
-  callHinata(name : string,hinataRef){
+  callHinata(user : User,hinataRef){
     console.log(name);
-    this.dynamicService.viewOverlay(hinataRef);
+    this.dynamicService.viewOverlay(hinataRef,user);
     
   }
 

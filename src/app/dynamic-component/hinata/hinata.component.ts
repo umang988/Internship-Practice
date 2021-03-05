@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-hinata',
@@ -9,6 +10,8 @@ export class HinataComponent implements OnInit {
 
   constructor() { }
 
+  hinataData : User;
+  
   ngOnInit(): void {
   }
 
