@@ -38,6 +38,29 @@
         "city": "Surat",
         "pincode": 326824
       }
+    },
+    {
+      "firstName": "Rashi",
+      "lastName": "Shah",
+      "jobTitleName": "Developer",
+      "phoneNumber": "23132123123",
+      "emailAddress": "r@gmaail.com",
+      "salary": "23132",
+      "details": {},
+      "id": 4
+    },
+    {
+      "firstName": "Umang",
+      "lastName": "Tandel",
+      "jobTitleName": "Angular",
+      "phoneNumber": "1234567890",
+      "emailAddress": "r@gmaail.com",
+      "salary": "23132",
+      "detail": {
+        "city": "Valsad",
+        "pincode": "396001"
+      },
+      "id": 5
     }
   ]
 }

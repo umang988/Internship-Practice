@@ -17,6 +17,6 @@
         <td> {{ emp.emailAddress }} </td>
         <td> {{ emp.salary }} </td>
         <td> {{ emp.details.city }},{{ emp.details.pincode }} </td>
-        <td> <button>Edit</button> <button (click)="deleteEmployee(emp.id)">Delete</button></td>
+        <td> <button (click)="editEmployee(emp.id)">Edit</button> <button (click)="deleteEmployee(emp.id)">Delete</button></td>
     </tr>
 </table>

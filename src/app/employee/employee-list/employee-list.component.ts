@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Employee } from '../employee.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
@@ -8,12 +10,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EmployeeListComponent implements OnInit {
 
-  public employeeData : any;
+  public employeeData : Employee;
 
   id : number;
   private headers = new Headers({ 'Content-Type' : 'application/json'});
   
-  constructor(private http : HttpClient) {
+  constructor(private http : HttpClient,private router : Router) {
     
    }
 
@@ -34,6 +36,10 @@ export class EmployeeListComponent implements OnInit {
          this.getData();
        })
      }
+   }
+
+   editEmployee(id){
+     this.router.navigate(['../employee/edit',id])
    }
 
   ngOnInit(): void {
