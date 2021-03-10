@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './core/header/header.component';
 import { SidebarComponent } from './core/sidebar/sidebar.component';
+import { TrailComponent } from './trail/trail.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SidebarComponent } from './core/sidebar/sidebar.component';
     HomeComponent,
     HeaderComponent,
     SidebarComponent,
+    TrailComponent,
   ],
   imports: [
     BrowserModule,
